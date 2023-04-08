@@ -39,8 +39,6 @@ Thank you for supporting
 ---
 Last but not least, I thankful to Foothill Technology Solutions company for offering this great internship cycle.
 
-![logo-a1f0dd26b5e986c8b9d362aec4fad576](https://user-images.githubusercontent.com/72463762/229240863-4b78be86-2d46-4e6b-aa59-844263e796ce.jpg)
-
-
+![download](https://user-images.githubusercontent.com/72463762/230725181-6cf43c34-3c1e-4390-bf29-8713693ebe93.png)
 
 
