@@ -10,19 +10,23 @@
 
   /*
         Blue: hsl(190, 93%, 56%);
-  */
+          hsl(203, 70, 74)
 
-  --first-hue: 190;
-  --sat: 93%;
-  --lig: 56%;
-  --second-hue: 219;
+          hsl(216, 57, 23)
+*/
+  --first-hue: 203;
+  --sat: 70%;
+  --lig: 74%;
+  
+  --second-hue: 216;
   --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
   --first-color-alt: hsl(var(--first-hue), var(--sat), 52%); /* -4% */
+
   --title-color: hsl(var(--second-hue), 15%, 95%);
   --text-color: hsl(var(--second-hue), 8%, 75%);
   --text-color-light: hsl(var(--second-hue), 4%, 55%);
   --body-color: hsl(var(--second-hue), 48%, 8%);
-  --container-color: hsl(var(--second-hue), 32%, 12%);
+  --container-color: hsl(var(--second-hue), 57%, 23%);
 
   /*========== ⌨️Font and typography⌨️ ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -87,6 +91,11 @@ body {
 h1, h2, h3 {
   color: var(--title-color);
   font-weight: var(--font-semibold);
+}
+
+h6{
+  font-size: .7rem;
+  font-weight: var(--font-medium);
 }
 
 ul {
@@ -265,7 +274,7 @@ body.light-theme{
   width: 2rem;
 }
 .nav__logo:hover{
-  color: var(--first-color-alt);
+  color: var(--first-color);
 }
 
 .nav__menu{
@@ -343,7 +352,18 @@ body.light-theme{
 
 .home__handle{
   justify-self: center;
-  border-radius: 75% 75% 75% 75%;
+  width: 220px;
+  height: 300px;
+  /* background: linear-gradient(180deg,
+  hsla(var(--second-hue),var(--sat), var(--lig),.1),
+  hsla(var(--first-hue),var(--sat), var(--lig),.2)
+  ); */
+  border-radius: 10rem 10rem 1rem 1rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+  
 
 }
 
@@ -438,7 +458,7 @@ body.light-theme{
 }
 
 .about__img{
-  width: 280px;
+  width: 300px;
   border-radius: 1.5rem;
   justify-self: center;
 }
@@ -533,6 +553,7 @@ span > a{
 }
 
 .about__img-bacground{
+
   position: absolute;
   z-index: -5;
   right: 1500px;
@@ -540,6 +561,19 @@ span > a{
   opacity: .4;
 }
 
+
+
+.other__tools{
+  padding-left: 8rem;
+}
+
+.other-tools-title{
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+  color: var(--first-color);
+  text-align: center;
+  margin-bottom: 2rem;
+}
 /*===============  STUIDES ===============*/
 
 .timeline__container
@@ -897,6 +931,7 @@ span > a{
   }
 
   .experience__name{
+    padding-bottom: -10px;
     font-size: var(--small-font-size);
   }
 
@@ -1122,6 +1157,11 @@ span > a{
   .experience__data{
     display: flex;
     column-gap: .5rem;
+  }
+
+  .experience__data > div{
+    display: flex;
+    flex-direction: column;
   }
   
   .experience .bxs-badge-check{
