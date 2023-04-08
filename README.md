@@ -1,5 +1,3 @@
-![dfd](https://user-images.githubusercontent.com/72463762/229239477-4912757a-99b6-4396-85c3-f69fe98bdb6d.jpg)
-
 <p align="center">"Codefolio": A Creative Portfolio for Web Developer</p>
 
 ![Thumbnail](https://user-images.githubusercontent.com/72463762/229240146-78eb3907-bbb4-41f0-bdea-f7130500d622.jpg)
